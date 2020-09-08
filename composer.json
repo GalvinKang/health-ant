@@ -1,0 +1,21 @@
+{
+  "name": "galvin/health-ant",
+  "description": "zhi fu bao health into ms",
+  "keywords": ["ant", "kang"],
+  "homepage": "https://github.com/GalvinKang",
+  "license" : "MIT",
+  "authors": [
+    {
+      "name": "Galvin",
+      "homepage": "https://Galvin.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "Health\\Ant\\": "src/"
+    }
+  }
+}
