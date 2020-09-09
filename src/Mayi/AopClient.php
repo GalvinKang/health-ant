@@ -5,9 +5,10 @@ use Health\Ant\Mayi\Tool\EncryptParseItem;
 use Health\Ant\Mayi\Tool\SignData;
 use function Health\Ant\Mayi\Tool\decrypt;
 use function Health\Ant\Mayi\Tool\encrypt;
+use Exception;
 
-class
-AopClient
+
+class AopClient
 {
     //应用ID
     public $appId;
