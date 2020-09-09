@@ -39,6 +39,7 @@ class MsMayi
         $request->setBizData("{\"user_id\":\"1234\",\"phone\":\"18267190001\",\"address\":\"浙江省杭州市西湖区黄龙时代广场XX\"}");
         $request->setOutBizNo("20181225002050020001000100000001");
         $request->setFileContent("@"."本地文件路径");
+        $request->setBizContent(json_encode($request));
         $result = $aop->execute ($request);
 
         $responseNode = str_replace(".", "_", $request->getApiMethodName()) . "_response";
@@ -61,6 +62,7 @@ class MsMayi
         $request->setOutBizNo('20181225002050020001000100000001');
         $request->setAntSerProdNo('SECC0001');
         $request->setBizData('{"user_id":"1234","phone":"18267190001","address":"浙江省杭州市⻄湖区⻩⻰时代⼴场XX"}');
+        $request->setBizContent(json_encode($request));
         $result = $aop->execute ($request);
         $responseNode = str_replace(".", "_", $request->getApiMethodName()) . "_response";
         $resultCode = $result->$responseNode->code;
@@ -77,6 +79,7 @@ class MsMayi
     {
         $request = new AlipayInsSceneInsserviceprodContractCheckRequest();
         $request->setAntSerContractNo('20190507009010020000000000000810000000201');
+        $request->setBizContent(json_encode($request));
         $result = $aop->execute ($request);
         $responseNode = str_replace(".", "_", $request->getApiMethodName()) . "_response";
         $resultCode = $result->$responseNode->code;
