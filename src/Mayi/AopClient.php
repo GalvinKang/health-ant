@@ -6,7 +6,8 @@ use Health\Ant\Mayi\Tool\SignData;
 use function Health\Ant\Mayi\Tool\decrypt;
 use function Health\Ant\Mayi\Tool\encrypt;
 
-class AopClient
+class
+AopClient
 {
     //应用ID
     public $appId;
