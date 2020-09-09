@@ -110,185 +110,62 @@ class AlipayInsSceneInsserviceprodSerattachmentUploadRequest
 
 
 
-    private $bizData;
+    public $biz_data;
 
 	/**
      * 文件业务码(业务方自定义)
      */
-	private $fileBizCode;
+    public $file_biz_code;
 
     /**
      * 文件二进制字节流
      **/
-	private $fileContent;
+    public $file_content;
 
 	/**
      * 文件描述
      */
-	private $fileDesc;
+    public $file_desc;
 
 	/**
      * 文件名称
      */
-	private $fileName;
+    public $file_name;
 
 	/**
      * 文件路径
      */
-	private $filePath;
+    public $file_path;
 
 	/**
      * 文件大小，对应java里面File的length
      */
-	private $fileSize;
+    public $file_size;
 
 	/**
      * 文件类型
      */
-	private $fileType;
+    public $file_type;
 
 	/**
      * 外部业务号
      */
-	private $outBizNo;
+    public $out_biz_no;
 
 	/**
      * 业务单据号
      */
-	private $serBizNo;
+    public $ser_biz_no;
 
 	/**
      * 服务业务类型
      */
-	private $serBizType;
+    public $ser_biz_type;
 
 	/**
      * 上传时间
      */
-	private $uploadTime;
+    public $upload_time;
 
 
-    public function setFileContent($fileContent)
-    {
-        $this->fileContent = $fileContent;
-        $this->apiParas["file_content"] = $fileContent;
-    }
-
-    public function getFileContent()
-    {
-        return $this->fileContent;
-    }
-
-
-    public function setBizData($bizData)
-    {
-        $this->bizData = $bizData;
-    }
-
-    public function getBizData()
-    {
-        return $this->bizData;
-    }
-
-    public function setFileBizCode($fileBizCode)
-    {
-        $this->fileBizCode = $fileBizCode;
-    }
-
-    public function getFileBizCode()
-    {
-        return $this->fileBizCode;
-    }
-
-    public function setFileDesc($fileDesc)
-    {
-        $this->fileDesc = $fileDesc;
-    }
-
-    public function getFileDesc()
-    {
-        return $this->fileDesc;
-    }
-
-    public function setFileName($fileName)
-    {
-        $this->fileName = $fileName;
-    }
-
-    public function getFileName()
-    {
-        return $this->fileName;
-    }
-
-    public function setFilePath($filePath)
-    {
-        $this->filePath = $filePath;
-    }
-
-    public function getFilePath()
-    {
-        return $this->filePath;
-    }
-
-    public function setFileSize($fileSize)
-    {
-        $this->fileSize = $fileSize;
-    }
-
-    public function getFileSize()
-    {
-        return $this->fileSize;
-    }
-
-    public function setFileType($fileType)
-    {
-        $this->fileType = $fileType;
-    }
-
-    public function getFileType()
-    {
-        return $this->fileType;
-    }
-
-    public function setOutBizNo($outBizNo)
-    {
-        $this->outBizNo = $outBizNo;
-    }
-
-    public function getOutBizNo()
-    {
-        return $this->outBizNo;
-    }
-
-
-    public function setSerBizNo($serBizNo)
-    {
-        $this->serBizNo = $serBizNo;
-    }
-
-    public function getSerBizNo()
-    {
-        return $this->serBizNo;
-    }
-
-
-    public function setSerBizType($serBizType)
-    {
-        $this->serBizType = $serBizType;
-    }
-
-    public function getSerBizType()
-    {
-        return $this->serBizType;
-    }
-
-    public function setUploadTime($uploadTime)
-    {
-        $this->uploadTime = $uploadTime;
-    }
-
-    public function getUploadTime()
-    {
-        return $this->uploadTime;
-    }
 }
