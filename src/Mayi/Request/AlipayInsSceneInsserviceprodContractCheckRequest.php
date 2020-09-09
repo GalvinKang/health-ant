@@ -112,22 +112,7 @@ class AlipayInsSceneInsserviceprodContractCheckRequest
      * ⽀付宝的服务合约编号
      * 服务出单接⼝中携带的那个
     */
-    private $antSerContractNo;
+    public $ant_ser_contract_no;
 
-
-    public function setAntSerContractNo($antSerContractNo)
-    {
-        $this->antSerContractNo = $antSerContractNo;
-    }
-
-    public function getAntSerContractNo()
-    {
-        return $this->antSerContractNo;
-    }
-
-    public function putOtherTextParam($key, $value) {
-        $this->apiParas[$key] = $value;
-        $this->$key = $value;
-    }
 
 }

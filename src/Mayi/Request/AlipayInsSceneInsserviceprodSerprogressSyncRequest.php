@@ -112,120 +112,41 @@ class AlipayInsSceneInsserviceprodSerprogressSyncRequest
     /**
      * ⽀付宝的服务记录编号
     */
-    private $serBizNo;
+    public $ser_biz_no;
 
     /**
      * 服务业务类型
      */
-    private $serBizType;
+    public $ser_biz_type;
 
     /**
      * 具体需要同步的进度
      */
-    private $status;
+    public $status;
 
 
     /**
      * 进度变更时间
      */
-    private $changeTime;
+    public $change_time;
 
     /**
      * 服务商的服务进度变更流⽔号
      * 唯⼀标识当前服务进度
      */
-    private $outBizNo;
+    public $out_biz_no;
 
 
     /**
      * ⽀付宝的服务产品编号
      */
-    private $antSerProdNo;
+    public $ant_ser_prod_no;
 
 
     /**
      * 扩展字段
      */
-    private $bizData;
+    public $biz_data;
 
-
-    public function setSerBizNo($serBizNo)
-    {
-        $this->serBizNo = $serBizNo;
-    }
-
-    public function getSerBizNo()
-    {
-        return $this->serBizNo;
-    }
-
-    public function setSerBizType($serBizType)
-    {
-        $this->serBizType = $serBizType;
-    }
-
-    public function getSerBizType()
-    {
-        return $this->serBizType;
-    }
-
-    public function setStatus($status)
-    {
-        $this->status = $status;
-    }
-
-    public function getStatus()
-    {
-        return $this->status;
-    }
-
-
-    public function setChangeTime($changeTime)
-    {
-        $this->changeTime = $changeTime;
-    }
-
-    public function getChangeTime()
-    {
-        return $this->changeTime;
-    }
-
-
-    public function setOutBizNo($outBizNo)
-    {
-        $this->outBizNo = $outBizNo;
-    }
-
-    public function getOutBizNo()
-    {
-        return $this->outBizNo;
-    }
-
-
-    public function setAntSerProdNo($antSerProdNo)
-    {
-        $this->antSerProdNo = $antSerProdNo;
-    }
-
-    public function getAntSerProdNo()
-    {
-        return $this->antSerProdNo;
-    }
-
-
-    public function setBizData($bizData)
-    {
-        $this->bizData = $bizData;
-    }
-
-    public function getBizData()
-    {
-        return $this->bizData;
-    }
-
-    public function putOtherTextParam($key, $value) {
-        $this->apiParas[$key] = $value;
-        $this->$key = $value;
-    }
 
 }
