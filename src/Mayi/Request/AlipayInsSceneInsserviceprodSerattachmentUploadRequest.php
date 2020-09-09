@@ -4,6 +4,7 @@ namespace Health\Ant\Mayi\Request;
 class AlipayInsSceneInsserviceprodSerattachmentUploadRequest
 {
 
+    private $bizContent;
     private $apiParas = array();
     private $terminalType;
     private $terminalInfo;
@@ -13,6 +14,17 @@ class AlipayInsSceneInsserviceprodSerattachmentUploadRequest
     private $returnUrl;
     private $needEncrypt=false;
 
+
+    public function setBizContent($bizContent)
+    {
+        $this->bizContent = $bizContent;
+        $this->apiParas["biz_content"] = $bizContent;
+    }
+
+    public function getBizContent()
+    {
+        return $this->bizContent;
+    }
 
     public function getApiMethodName()
     {
